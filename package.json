@@ -8,7 +8,7 @@
 		"build": "next build",
 		"start": "next start",
 		"type-check": "tsc --pretty --noEmit",
-		"format": "prettier --write .",
+		"format": "prettier --write \"./src/**/*.+(ts|js|tsx|jsx|json|css)\"",
 		"lint": "eslint . --ext ts --ext tsx --ext js",
 		"test": "jest",
 		"test:watch": "jest --watch",
