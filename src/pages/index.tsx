@@ -8,7 +8,7 @@ const Home = (): JSX.Element => {
 				Hello World!!!
 			</h1>
 			<Button
-				onClick={() => {
+				onClick={(): void => {
 					window.alert('TypeScript is coool!');
 				}}
 			>
