@@ -7,7 +7,12 @@ export default {
 	title: 'Atoms/Button',
 	component: Button,
 	argTypes: {
-		variant: { control: 'select' },
+		variant: {
+			control: {
+				type: 'select',
+				options: ['filled', 'outlined'],
+			},
+		},
 	},
 } as Meta;
 
@@ -39,5 +44,4 @@ export const WithIcon: Story<ButtonProps> = args => (
 
 WithIcon.args = {
 	...Default.args,
-	classes: 'w-full',
 };
