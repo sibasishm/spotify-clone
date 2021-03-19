@@ -5,7 +5,7 @@ const Home = (): JSX.Element => {
 	return (
 		<>
 			<h1 className='flex items-center justify-between mb-4 text-6xl font-bold'>
-				Hello World!!
+				Hello World!!!
 			</h1>
 			<Button
 				onClick={() => {
