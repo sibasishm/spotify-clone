@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home page matches snapshot 1`] = `
+<DocumentFragment>
+  <h1
+    class="flex items-center justify-between mb-4 text-6xl font-bold"
+  >
+    Hello World
+  </h1>
+  <button>
+    Click Me
+  </button>
+  <p
+    class="p-2"
+  >
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus blanditiis delectus quisquam, quaerat at, reprehenderit ullam ipsum aliquid quibusdam consectetur officia esse! Numquam repellat cupiditate ut corporis nemo debitis soluta!
+  </p>
+</DocumentFragment>
+`;

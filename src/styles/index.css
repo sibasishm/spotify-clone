@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: 'Public Sans';
+	font-style: normal;
+	font-weight: 100 900;
+	font-display: swap;
+	src: url(/static/fonts/public-sans-var.ttf) format('truetype');
+}
