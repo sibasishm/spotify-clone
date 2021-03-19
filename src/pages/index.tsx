@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from 'components/button';
+import { Button } from 'components/button/button';
 
 const Home = (): JSX.Element => {
 	return (
@@ -8,6 +8,7 @@ const Home = (): JSX.Element => {
 				Hello World!!!
 			</h1>
 			<Button
+				variant='filled'
 				onClick={(): void => {
 					window.alert('TypeScript is coool!');
 				}}
