@@ -1,4 +1,5 @@
 import React from 'react';
+import { Button } from 'components/button';
 
 const Home = (): JSX.Element => {
 	return (
@@ -6,6 +7,13 @@ const Home = (): JSX.Element => {
 			<h1 className='flex items-center justify-between mb-4 text-6xl font-bold'>
 				Hello World
 			</h1>
+			<Button
+				onClick={() => {
+					window.alert('typeScript is coool!');
+				}}
+			>
+				Click Me
+			</Button>
 			<p className='p-2'>
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
 				blanditiis delectus quisquam, quaerat at, reprehenderit ullam ipsum

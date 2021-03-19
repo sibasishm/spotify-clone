@@ -1,5 +1,10 @@
-import React from 'react';
+import * as React from 'react';
 
-export const Button = (): JSX.Element => {
-	return <button>Click Me</button>;
+type Props = {
+	onClick: () => void;
+	children: React.ReactNode;
+};
+
+export const Button = ({ onClick, children }: Props): JSX.Element => {
+	return <button onClick={onClick}>{children}</button>;
 };
