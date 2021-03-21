@@ -5,9 +5,11 @@ exports[`Home page matches snapshot 1`] = `
   <h1
     class="flex items-center justify-between mb-4 text-6xl font-bold"
   >
-    Hello World
+    Hello World!!!
   </h1>
-  <button>
+  <button
+    class="flex items-center justify-center font-bold py-2 px-6 text-sm rounded-lg border-2 text-primary border-primary hover:border-primary-offset disabled:border-disabled disabled:text-dark-offset"
+  >
     Click Me
   </button>
   <p
