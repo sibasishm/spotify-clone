@@ -7,7 +7,7 @@ import { toEnum, toBoolean } from 'utils/storybookUtils';
 import { Clipboard } from 'icons/clipboard';
 
 export default {
-	title: 'Atoms/Button',
+	title: 'Elements/Button',
 	component: Button,
 	argTypes: {
 		onClick: { action: 'clicked' },
@@ -24,9 +24,9 @@ const ButtonComponent: Story<ButtonProps & { exampleIcon?: boolean }> = ({
 	</Button>
 );
 
-export const Main = ButtonComponent.bind({});
+export const Default = ButtonComponent.bind({});
 
-Main.argTypes = {
+Default.argTypes = {
 	size: toEnum(Object.keys(sizes)),
 	color: toEnum(colors),
 	variant: toEnum(variants),
