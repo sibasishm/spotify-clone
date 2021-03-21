@@ -3,9 +3,9 @@ export const sizes = {
 	small: 'py-1 px-2 text-xs rounded-md',
 };
 
-export const colors = ['primary', 'secondary'];
+export const colors = ['primary', 'secondary'] as const;
 
-export const variants = ['solid', 'outline'];
+export const variants = ['solid', 'outline'] as const;
 
 type ColorClass = { primary: string; secondary: string };
 

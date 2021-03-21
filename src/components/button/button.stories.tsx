@@ -28,7 +28,7 @@ export const Default = ButtonComponent.bind({});
 
 Default.argTypes = {
 	size: toEnum(Object.keys(sizes)),
-	color: toEnum(colors),
-	variant: toEnum(variants),
+	color: toEnum([...colors]),
+	variant: toEnum([...variants]),
 	exampleIcon: toBoolean(),
 };
