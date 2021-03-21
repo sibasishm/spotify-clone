@@ -1,6 +1,4 @@
 @tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 @font-face {
 	font-family: 'Public Sans';
@@ -9,3 +7,17 @@
 	font-display: swap;
 	src: url(/static/fonts/public-sans-var.ttf) format('truetype');
 }
+
+:root {
+	--color-primary: '#10b981';
+	--color-primary-offset: '#059669';
+	--color-secondary: '#fb923c';
+	--color-secondary-offset: '#f97316';
+	--color-bg: '#fafafa';
+	--color-bg-offset: '#ffffff';
+	--color-text: '#171717';
+	--color-text-offset: '#404040';
+	--color-border: '#a8a29e';
+}
+
+@tailwind utilities;

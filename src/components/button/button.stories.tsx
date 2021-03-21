@@ -10,13 +10,13 @@ export default {
 		variant: {
 			control: {
 				type: 'select',
-				options: ['filled', 'outlined'],
 			},
+			options: ['filled', 'outlined'],
 		},
 	},
 } as Meta;
 
-export const Default: Story<ButtonProps> = args => (
+export const Default: Story<ButtonProps> = (args) => (
 	<Button {...args}>Hello World</Button>
 );
 
@@ -25,7 +25,7 @@ Default.args = {
 	classes: 'w-64 inline-block',
 };
 
-export const WithIcon: Story<ButtonProps> = args => (
+export const WithIcon: Story<ButtonProps> = (args) => (
 	<Button {...args}>
 		<svg
 			xmlns='http://www.w3.org/2000/svg'
