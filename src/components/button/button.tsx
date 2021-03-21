@@ -4,15 +4,15 @@ import React, {
 	ReactNode,
 } from 'react';
 
-import { variants, sizes, colors } from './variations';
+import { variants, sizes, colors, generateClassName } from './variations';
 
 export type ButtonProps = DetailedHTMLProps<
 	ButtonHTMLAttributes<HTMLButtonElement>,
 	HTMLButtonElement
 > & {
 	size?: keyof typeof sizes;
-	color?: keyof typeof colors;
-	variant?: keyof typeof variants;
+	color?: typeof colors[number];
+	variant?: typeof variants[number];
 	icon?: ReactNode;
 };
 
@@ -26,7 +26,9 @@ export const Button = ({
 }: ButtonProps): JSX.Element => {
 	return (
 		<button
-			className={`flex items-center justify-center font-bold ${sizes[size]} ${variants[variant]} ${colors[color]} disabled:text-dark-offset`}
+			className={`flex items-center justify-center font-bold ${
+				sizes[size]
+			} ${generateClassName(variant, color)} disabled:text-dark-offset`}
 			{...props}
 		>
 			{icon ? <span className='mr-2'>{icon}</span> : null}
