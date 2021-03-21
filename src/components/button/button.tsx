@@ -22,7 +22,7 @@ export const Button = ({
 			className={[
 				classes,
 				'rounded-sm px-4 py-2',
-				`${variant === 'filled' ? 'bg-blue-400' : 'border-2 border-blue-400'}`,
+				`${variant === 'filled' ? 'bg-primary' : 'border-2 border-primary'}`,
 			].join(' ')}
 			onClick={onClick}
 			{...rest}

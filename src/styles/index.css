@@ -9,15 +9,15 @@
 }
 
 :root {
-	--color-primary: '#10b981';
-	--color-primary-offset: '#059669';
-	--color-secondary: '#fb923c';
-	--color-secondary-offset: '#f97316';
-	--color-bg: '#fafafa';
-	--color-bg-offset: '#ffffff';
-	--color-text: '#171717';
-	--color-text-offset: '#404040';
-	--color-border: '#a8a29e';
+	--color-primary: #10b981;
+	--color-primary-offset: #059669;
+	--color-secondary: #fb923c;
+	--color-secondary-offset: #f97316;
+	--color-light: #fafafa;
+	--color-light-offset: #f7f7f7;
+	--color-dark: #171717;
+	--color-dark-offset: #404040;
+	--color-border: #a8a29e;
 }
 
 @tailwind utilities;
