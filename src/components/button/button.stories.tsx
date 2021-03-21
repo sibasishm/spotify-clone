@@ -8,6 +8,7 @@ import { Clipboard } from 'icons/clipboard';
 
 export default {
 	title: 'Atoms/Button',
+	component: Button,
 	argTypes: {
 		onClick: { action: 'clicked' },
 	},

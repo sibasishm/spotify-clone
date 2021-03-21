@@ -13,6 +13,9 @@ export type ButtonProps = DetailedHTMLProps<
 	size?: keyof typeof sizes;
 	color?: typeof colors[number];
 	variant?: typeof variants[number];
+	/**
+	 * If added, the button will show an icon before the button's label.
+	 */
 	icon?: ReactNode;
 };
 
