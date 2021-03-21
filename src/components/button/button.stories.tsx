@@ -21,8 +21,7 @@ export const Default: Story<ButtonProps> = (args) => (
 );
 
 Default.args = {
-	variant: 'filled',
-	classes: 'w-64 inline-block',
+	variant: 'primary-filled',
 };
 
 export const WithIcon: Story<ButtonProps> = (args) => (
