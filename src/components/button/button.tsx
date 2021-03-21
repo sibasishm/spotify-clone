@@ -1,30 +1,43 @@
-import * as React from 'react';
+import React, {
+	ButtonHTMLAttributes,
+	DetailedHTMLProps,
+	ReactNode,
+} from 'react';
 
-export interface ButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
-	onClick: () => void;
-	children: React.ReactNode;
-	classes?: string;
-	/**
-	 * Test
-	 */
-	variant: 'filled' | 'outlined';
-}
+const sizes = {
+	big: 'py-2 px-6 text-sm rounded-lg',
+	small: 'py-1 px-2 text-xs rounded-md',
+};
+
+const variants = {
+	'primary-filled':
+		'text-white bg-primary hover:bg-primary-offset disabled:bg-disabled',
+	'primary-outlined':
+		'border-2 text-dark border-primary hover:border-primary-offset disabled:border-disabled',
+	'secondary-filled':
+		'text-white bg-secondary hover:bg-secondary-offset disabled:bg-disabled',
+	'secondary-outlined':
+		'border-2 text-dark border-secondary hover:border-secondary-offset disabled:border-disabled',
+};
+
+export type ButtonProps = DetailedHTMLProps<
+	ButtonHTMLAttributes<HTMLButtonElement>,
+	HTMLButtonElement
+> & {
+	size?: keyof typeof sizes;
+	variant?: keyof typeof variants;
+	icon?: ReactNode;
+};
 
 export const Button = ({
-	variant = 'filled',
-	onClick,
-	classes,
 	children,
+	size = 'big',
+	variant = 'primary-filled',
 	...rest
 }: ButtonProps): JSX.Element => {
 	return (
 		<button
-			className={[
-				classes,
-				'rounded-sm px-4 py-2',
-				`${variant === 'filled' ? 'bg-primary' : 'border-2 border-primary'}`,
-			].join(' ')}
-			onClick={onClick}
+			className={`font-bold ${sizes[size]} ${variants[variant]} disabled:text-dark-offset`}
 			{...rest}
 		>
 			{children}

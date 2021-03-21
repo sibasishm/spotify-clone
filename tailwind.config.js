@@ -12,6 +12,7 @@ module.exports = {
 			black: 'black',
 			transparent: 'transparent',
 			border: 'var(--color-border)',
+			disabled: 'var(--color-disabled)',
 			primary: {
 				DEFAULT: 'var(--color-primary)',
 				offset: 'var(--color-primary-offset)',
