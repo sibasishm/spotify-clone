@@ -6,10 +6,11 @@ import React, {
 
 import { variants, sizes, colors, generateClassName } from './variations';
 
-export type ButtonProps = DetailedHTMLProps<
-	ButtonHTMLAttributes<HTMLButtonElement>,
-	HTMLButtonElement
-> & {
+export interface ButtonProps
+	extends DetailedHTMLProps<
+		ButtonHTMLAttributes<HTMLButtonElement>,
+		HTMLButtonElement
+	> {
 	size?: keyof typeof sizes;
 	color?: typeof colors[number];
 	variant?: typeof variants[number];
@@ -17,7 +18,7 @@ export type ButtonProps = DetailedHTMLProps<
 	 * If added, the button will show an icon before the button's label.
 	 */
 	icon?: ReactNode;
-};
+}
 
 export const Button = ({
 	children,

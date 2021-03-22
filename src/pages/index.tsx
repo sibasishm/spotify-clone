@@ -1,9 +1,11 @@
 import React from 'react';
 import { Button } from 'components/button/button';
+import { TopNav } from 'components/topnav';
 
 const Home = (): JSX.Element => {
 	return (
 		<>
+			<TopNav />
 			<h1 className='flex items-center justify-between mb-4 text-6xl font-bold'>
 				Hello World!!!
 			</h1>
